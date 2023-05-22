@@ -1,0 +1,82 @@
+.modal-container {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-body {
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-header > h3 {
+  margin-top: 0;
+}
+
+.modal-locations {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+}
+
+.modal-locations > hr {
+  width: 95%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.modal-locations > hr:not(:first-child):nth-child(even) {
+  border-top: 0;
+}
+
+.modal-location {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-location:hover,
+.exit-btn > p:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-location > div {
+  display: flex;
+}
+
+.exit-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+.exit-btn > p {
+  font-size: large;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit-btn > p:hover {
+  cursor: pointer;
+}

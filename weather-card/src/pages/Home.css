@@ -1,0 +1,21 @@
+.header,
+.search-container,
+.weather-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  margin-top: 10px;
+}
+
+.weather-container {
+  width: 100vw;
+  margin-top: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
